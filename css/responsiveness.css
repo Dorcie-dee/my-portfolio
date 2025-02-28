@@ -1,0 +1,1111 @@
+/* tablet 768  max-width 1000*/
+/* mobile 480 max-w 850 */
+/* large 1200 max-w 1010 */
+/* extra large 1920px */
+
+
+
+section-one
+/* Responsive Styles */
+
+/* Tablet Layout (max-width: 1000px) */
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 20px 2%;
+  }
+
+  .nav-links {
+    display: none;
+    /* Hide navbar links */
+  }
+
+  .navbar span {
+    justify-content: center;
+  }
+
+  .navbar .name {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    height: auto;
+    padding-top: 10%;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .socials {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mypic {
+    width: 70%;
+    height: auto;
+  }
+}
+
+/* Mobile Layout (max-width: 480px) */
+@media (max-width: 850px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero button {
+    font-size: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .socials {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .mypic img {
+    height: 30%;
+    width: auto;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  .navbar {
+    padding: 40px 5%;
+  }
+
+  .nav-links {
+    column-gap: 3rem;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .hero button {
+    font-size: 1.2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .mypic {
+    flex-basis: 20%;
+  }
+}
+
+/* Extra Large Screens (TVs, Ultra-wide monitors, min-width: 1920px) */
+@media (min-width: 1920px) {
+  .navbar {
+    padding: 50px 10%;
+    font-size: 1.4rem;
+    /* Larger font size for readability */
+  }
+
+  .nav-links {
+    column-gap: 6rem;
+  }
+
+  .hero {
+    height: 80vh;
+    /* Adjust the height for a larger screen */
+    flex-direction: row;
+    padding: 2%;
+  }
+
+  .content {
+    flex-basis: 45%;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero button {
+    font-size: 1.3rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  .mypic {
+    flex-basis: 30%;
+    /* Adjust the picture container for large screens */
+  }
+
+  .mypic img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+
+
+/* ABOUT */
+/* Tablet Layout (max-width: 1000px) */
+@media (max-width: 1000px) {
+  #about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .aboutme {
+    grid-template-columns: 1fr;
+    /* Stack the two columns vertically */
+    column-gap: 20px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  .aboutme button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #about img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile Layout (max-width: 480px) */
+@media (max-width: 850px) {
+  #about {
+    padding: 20px;
+  }
+
+  .aboutme {
+    grid-template-columns: 1fr;
+    /* Stack the content vertically */
+    column-gap: 10px;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  #about h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutme button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  #about img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  #about {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .aboutme {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  #about h2 {
+    font-size: 2.8rem;
+  }
+
+  .aboutme button {
+    font-size: 1.2rem;
+    padding: 15px 25px;
+  }
+
+  #about img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Extra Large Screens (TVs, Ultra-wide monitors, min-width: 1920px) */
+@media (min-width: 1920px) {
+  #about {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .aboutme {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+  }
+
+  #about h2 {
+    font-size: 3.5rem;
+  }
+
+  .aboutme button {
+    font-size: 1.4rem;
+    padding: 18px 30px;
+  }
+
+  #about img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+
+
+
+/* EXPERIENCE */
+/* Tablet Layout (max-width: 1000px) */
+@media (max-width: 1000px) {
+  #experience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .experience-header {
+    font-size: 1.8rem;
+  }
+
+  #experience .experience-content {
+    flex-direction: column;
+    /* Stack the content vertically on smaller screens */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-tasks {
+    grid-template-columns: 1fr;
+    /* Stack grid items vertically */
+    column-gap: 20px;
+  }
+
+  .grid-items {
+    text-align: center;
+  }
+
+  .experience-tasks {
+    padding: 20px;
+  }
+
+  .experience-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile Layout (max-width: 480px) */
+@media (max-width: 850px) {
+  #experience {
+    padding: 20px;
+  }
+
+  .experience-header {
+    font-size: 1.6rem;
+  }
+
+  #experience .experience-content {
+    flex-direction: column;
+    /* Stack the content vertically */
+    align-items: center;
+  }
+
+  .experience-tasks {
+    grid-template-columns: 1fr;
+    /* Stack grid items vertically */
+    column-gap: 10px;
+    padding: 15px;
+  }
+
+  .grid-items {
+    font-size: 1rem;
+  }
+
+  .experience-tasks {
+    padding: 15px;
+  }
+
+  .experience-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  #experience {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .experience-header {
+    font-size: 2.5rem;
+  }
+
+  .experience-content {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 0px; */
+    padding: 0 5% ;
+  }
+
+  .experience-tasks {
+    grid-template-columns: repeat(3, 1fr);
+    /* Spread items across three columns */
+    column-gap: 100px;
+    /* row-gap: 0.4%; */
+    width: 60%;
+  }
+
+  .grid-items {
+    text-align: left;
+  }
+
+  .experience-tasks {
+    padding: 30px;
+  }
+
+  .experience-content img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+
+
+/* SKILLS */
+/* Tablet Layout (max-width: 1000px) */
+@media (max-width: 1000px) {
+  #skills {
+    padding: 10px;
+  }
+
+  .skills-one {
+    font-size: 1rem;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .skills-one h2 {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    /* Stack skill items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .skill-item {
+    width: 120px;
+    /* Adjust width for smaller screens */
+    margin: 15px;
+  }
+
+  .skill-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill-percentage {
+    font-size: 1.2em;
+    /* Adjust percentage size */
+  }
+
+  .skill-label {
+    font-size: 1em;
+  }
+}
+
+/* Mobile Layout (max-width: 480px) */
+@media (max-width: 850px) {
+  #skills {
+    padding: 15px;
+  }
+
+  .skills-one {
+    font-size: 0.9rem;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .skills-one h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    /* Stack skill items vertically */
+    align-items: center;
+  }
+
+  .skill-item {
+    width: 100px;
+    /* Smaller width for mobile devices */
+    margin: 10px;
+  }
+
+  .skill-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-percentage {
+    font-size: 1em;
+    /* Further reduce percentage size */
+  }
+
+  .skill-label {
+    font-size: 0.9em;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  #skills {
+    padding: 40px 100px;
+  }
+
+  .skills-one {
+    font-size: 1.2rem;
+    padding-top: 50px;
+  }
+
+  .skills-one h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .skill-item {
+    width: 150px;
+    /* Ensure a consistent size on large screens */
+    margin: 20px;
+  }
+
+  .skill-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-percentage {
+    font-size: 1.5em;
+  }
+
+  .skill-label {
+    font-size: 1.2em;
+  }
+}
+
+/* Extra Large Screens (TVs, Ultra-wide monitors, min-width: 1920px) */
+@media (min-width: 1920px) {
+  #skills {
+    padding: 50px 150px;
+  }
+
+  .skills-one {
+    font-size: 1.3rem;
+    padding-top: 60px;
+  }
+
+  .skills-one h2 {
+    font-size: 3rem;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 50px;
+  }
+
+  .skill-item {
+    width: 200px;
+    margin: 25px;
+  }
+
+  .skill-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill-percentage {
+    font-size: 2em;
+  }
+
+  .skill-label {
+    font-size: 1.5em;
+  }
+}
+
+
+
+/* PROJECT */
+/* Tablet Layout (max-width: 1000px) */
+@media (max-width: 1000px) {
+  .project-words h2 {
+    font-size: 2rem;
+  }
+
+  .project-words p {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    /* Adjust to 2 columns on smaller screens */
+    padding: 2rem;
+    column-gap: 1.2rem;
+  }
+
+  .project-all {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .project-photos img {
+    height: auto;
+    /* Ensure images maintain aspect ratio on smaller screens */
+  }
+
+  .project-all h4 {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-all p {
+    font-size: 0.95rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Mobile Layout (max-width: 480px) */
+@media (max-width: 850px) {
+  .project-words h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-words p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    /* Stack the projects in a single column */
+    padding: 1.5rem;
+    column-gap: 1rem;
+  }
+
+  .project-all {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .project-photos img {
+    height: auto;
+  }
+
+  .project-all h4 {
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .project-all p {
+    font-size: 0.85rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columns layout */
+    padding: 4rem;
+    column-gap: 2rem;
+  }
+
+  .project-all {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .project-photos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-all h4 {
+    font-size: 1.6rem;
+  }
+
+  .project-all p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Large Screens (TVs, Ultra-wide monitors, min-width: 1920px) */
+@media (min-width: 1920px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Keep 3 columns layout */
+    padding: 6rem 10rem;
+    column-gap: 3rem;
+  }
+
+  .project-all {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .project-photos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-all h4 {
+    font-size: 2rem;
+  }
+
+  .project-all p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+/* CONTACT */
+/* Tablet Layout (max-width: 1000px) */
+@media (max-width: 768px) {
+  .cta {
+    padding: 40px;
+  }
+
+  .cta-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .cta-container img {
+    max-width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .form h3 {
+    font-size: 1.8rem;
+  }
+
+  .form p {
+    font-size: 1rem;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .form button {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Layout (max-width: 480px) */
+@media (max-width: 850px) {
+  .cta {
+    padding: 30px;
+  }
+
+  .cta-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .cta-container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .form h3 {
+    font-size: 1.6rem;
+  }
+
+  .form p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  .cta {
+    padding: 80px;
+  }
+
+  .cta-container {
+    width: 900px;
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  .cta-container img {
+    width: 50%;
+  }
+
+  .form {
+    max-width: 60%;
+    padding: 20px;
+  }
+
+  .form h3 {
+    font-size: 2rem;
+  }
+
+  .form p {
+    font-size: 1.1rem;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Extra Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .cta {
+    padding: 100px;
+  }
+
+  .cta-container {
+    width: 1000px;
+    flex-direction: row;
+    padding: 3rem;
+  }
+
+  .cta-container img {
+    width: 50%;
+  }
+
+  .form {
+    max-width: 60%;
+    padding: 30px;
+  }
+
+  .form h3 {
+    font-size: 2.5rem;
+  }
+
+  .form p {
+    font-size: 1.2rem;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 18px;
+    padding: 25px;
+  }
+
+  .form button {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+/* FOOTER */
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 850px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer h2 {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-socials img {
+    width: 2rem;
+    padding: 0.3rem;
+  }
+
+  .footer-socials img:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* For Tablets (max-width: 1000px) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .footer h2 {
+    font-size: 2rem;
+  }
+
+  .footer p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .footer-socials img {
+    width: 2.5rem;
+    padding: 0.3rem;
+  }
+
+  .footer-socials img:hover {
+    transform: scale(1.3);
+  }
+}
+
+/* For Large Screens (min-width: 1200px) */
+@media (min-width: 1010px) {
+  .footer {
+    padding: 4rem 3rem;
+  }
+
+  .footer h2 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .footer p {
+    font-size: 1.3rem;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footer-socials img {
+    width: 3rem;
+    padding: 0.3rem;
+  }
+
+  .footer-socials img:hover {
+    transform: scale(1.3);
+  }
+}
+
+/* For Extra Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .footer {
+    padding: 5rem 4rem;
+  }
+
+  .footer h2 {
+    font-size: 3rem;
+  }
+
+  .footer p {
+    font-size: 1.5rem;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .footer-socials img {
+    width: 3.5rem;
+    padding: 0.4rem;
+  }
+
+  .footer-socials img:hover {
+    transform: scale(1.4);
+  }
+}
+
+
+
+
+/* SECOND FOOTER */
+/* Mobile Devices */
+@media (max-width: 850px) {
+  footer {
+    font-size: 1rem;
+    /* Smaller font size for mobile */
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  footer span {
+    text-align: center;
+    font-size: 0.9rem;
+    /* Adjust font size of the text */
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  footer {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  footer span {
+    text-align: center;
+    font-size: 1rem;
+    /* Adjust font size */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1010px) {
+  footer {
+    font-size: 1.2rem;
+    /* Larger font for larger screens */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  footer span {
+    font-size: 1.1rem;
+    /* Adjust font size of the text */
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1920px) {
+  footer {
+    font-size: 1.3rem;
+    /* Even larger font */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer span {
+    font-size: 1.2rem;
+    /* Adjust font size of the text */
+  }
+}
