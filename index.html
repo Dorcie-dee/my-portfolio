@@ -7,20 +7,26 @@
     <title>Portfolio of Dorcas Nyamekye Quaye</title>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/responsiveness.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-        <link rel="stylesheet" href="./css/styles.css">
+    </style>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsiveness.css">
 </head>
 
 <body>
     <section id="home" class="container">
         <nav class="navbar">
             <span>
-                <!-- <img src="./img/head.jpeg" alt="" style="width: 70px; border-radius: 50%; aspect-ratio: 1/1;"> -->
                 <span class="name">DORCAS NYAMEKYE QUAYE</span>
             </span>
+
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <div class="nav-links">
                 <a href="#home">HOME</a>
                 <a href="#about">ABOUT</a>
@@ -31,17 +37,18 @@
             </div>
         </nav>
 
-        </nav>
         <div class="hero">
             <div class="content">
                 <h1>HEYYA, <br> I'M DORCAS NYAMEKYE QUAYE</h1>
-                <p>I'm a full-stack developer with a passion for creating responsive, user-friendly websites. I
-                    specialize
-                    in
-                    front-end development and have recently expanded my skills into back-end development to build
-                    dynamic and
-                    scalable web applications.</p>
-                <button> <a href="https://drive.google.com/file/d/1SNIQEqwrw6fDfPD6vqeFXG6FtdIn0zTK/view?usp=sharing">DOWNLOAD CV</a></button>
+                <p>I'm a backend-focused developer with strong expertise in building efficient web applications. While I
+                    specialize in backend development, I also have valuable frontend skills for creating responsive
+                    interfaces. My background in administration and language services has sharpened my attention to
+                    detail, problem-solving, adaptability, communication, collaboration and growth mindset; skills I
+                    apply to building
+                    robust and user-friendly systems.</p>
+                <button> <a
+                        href="https://drive.google.com/file/d/1I7HelxBbX9_-pkVKKUhQdglDscsmis6Q/view?usp=sharing">DOWNLOAD
+                        CV</a></button>
                 <div class="socials">
                     <a href="https://www.linkedin.com/in/dorcasnyamekyequaye"> <img src="./img/linkedin.png"
                             alt="linkedin icon">
@@ -204,7 +211,7 @@
     <section id="contact" class="cta">
         <div class="cta-container">
             <div>
-                <img src="./img/cta.png" alt="">
+                <img src="./img/cta.png">
             </div>
             <div class="form">
                 <h3>Contact Me</h3>
@@ -212,7 +219,8 @@
                     friendly chat</p>
                 <input type="text" name="Message" placeholder="Enter your name here" required>
                 <input type="email" name="email" placeholder="Enter email here" required>
-                <textarea name="name" placeholder="Please share the details of your request" required> </textarea>
+                <textarea name="name" placeholder="Please share the details of your request" required></textarea>
+
                 <button>Submit</button>
             </div>
         </div>
@@ -241,6 +249,8 @@
     </footer>
 
     <script src="./js/script.js"></script>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
 </body>
 
 </html>
