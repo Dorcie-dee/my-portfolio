@@ -1,3 +1,17 @@
+//darktoggling
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (body.classList.contains('dark-mode')) {
+    darkModeToggle.textContent = '☀️';
+  } else {
+    darkModeToggle.textContent = '🌙';
+  }
+});
+
+
 //hamburger
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -18,13 +32,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Sticky navbar on scroll
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-});
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 50) {
+//     navbar.classList.add('sticky');
+//   } else {
+//     navbar.classList.remove('sticky');
+//   }
+// });
 
 
 //back to top
@@ -99,7 +113,7 @@ window.addEventListener('resize', () => {
 
 //       // Create a dynamic gradient based on the percentage
 //       circleInner.style.backgroundImage = `conic-gradient(
-//           #007bff ${percentage}%, 
+//           #007bff ${percentage}%,
 //           lightgray ${percentage}%
 //       )`;
 //   });
@@ -107,4 +121,3 @@ window.addEventListener('resize', () => {
 
 
 
- 

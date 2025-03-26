@@ -1,0 +1,61 @@
+/* Responsive Design */
+@media (max-width: 480px) { /* Small Mobile */
+  .hero {
+      flex-direction: column;
+      padding: 2rem;
+  }
+  .hero h1 {
+      font-size: 1.8rem;
+  }
+  .nav-links {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) { /* Large Mobile */
+  .hero {
+      flex-direction: column;
+      padding: 3rem;
+  }
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+  .nav-links {
+    display: none;
+    /* position: absolute; */
+}
+.hamburger {
+    display: flex;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { /* Tablet */
+  .hero {
+      flex-direction: row;
+      padding: 4rem;
+  }
+  .hero h1 {
+      font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) { /* Desktop */
+  .hero {
+      padding: 5rem;
+  }
+}
+
+@media (min-width: 1440px) { /* Large Screen */
+  .hero {
+      padding: 6rem;
+  }
+}
+
+@media (min-width: 2000px) { /* Extra Large Screen */
+  .hero {
+      padding: 8rem;
+  }
+}
