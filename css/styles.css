@@ -32,9 +32,12 @@ body.dark-mode{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px 5%;
+  padding: 20px 5%;
   background-color: #fff;
-  /* margin-bottom: 5px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar span {
@@ -73,6 +76,9 @@ body.dark-mode{
   text-align: center;
   padding: 20px 0;
   z-index: 9999;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
 }
 
 .dark-mode .nav-links.active {
@@ -91,7 +97,7 @@ body.dark-mode{
   color: #9F00FF;
 }
 
-/*hamburger. hidden by :default*/
+/*hamburger. hidden by default*/
 .hamburger {
   display: none;
   background: transparent;
@@ -99,7 +105,6 @@ body.dark-mode{
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
-  /* padding: 10px; */
   z-index: 1001;
 }
 
@@ -107,7 +112,6 @@ body.dark-mode{
   display: block;
   width: 25px;
   height: 3px;
-  /* margin: 5px auto; */
   background-color: #9F00FF;
   transition: all 0.3s ease;
 }
@@ -125,16 +129,16 @@ body.dark-mode{
 }
 
 .hero {
-  /* width: 100%; */
   display: flex;
-  /* row-gap: 1.8rem; */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #4f3274;
-  /* min-height: 90vh; */
   position: relative;
+  z-index: 1;
   color: white;
-  padding: 2rem 5%;
+  padding: 1rem 3%;
+  margin-top: 70px;
 }
 
 .content {
@@ -155,6 +159,7 @@ body.dark-mode{
 .hero p {
   font-size: 1.1rem;
   text-align: justify;
+  max-width: 600px;
 }
 
 .hero button {
@@ -181,7 +186,7 @@ body.dark-mode{
 .hero button:hover {
   background-color: #62039c;
   color: black;
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   /* transition: 0.3s ease-in-out; */
   border-color: #9F00FF;
   border-width: 2px;
@@ -195,7 +200,6 @@ body.dark-mode{
   position: absolute;
   left: 0;
   top: calc(50% - 8.5rem);
-  /* transform: translateY(-50%); */
   padding: .5rem;
   background-color: white;
 }
@@ -208,7 +212,6 @@ body.dark-mode{
 }
 
 .socials img:hover {
-  /* background-color: #f1f4f7; */
   transition: 0.3s ease-in-out;
   border: none;
   transform: scale(1.3);
@@ -220,8 +223,6 @@ body.dark-mode{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
-
 }
 
 .mypic img {
@@ -287,7 +288,17 @@ body.dark-mode{
   font-size: 1.1rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  animation-name: contact;
+    animation: contact 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes contact{
+  from { transform: translate3d(0, 0, 0);}
+  to { transform: translate3d(0, 10px, 20px);}
+}
+
 
 .aboutme button:hover {
   background-color: #62039c;
@@ -443,6 +454,7 @@ body.dark-mode{
 
 .skill-label {
   font-size: 1.1em;
+  text-align: center;
 }
 
 
@@ -622,6 +634,7 @@ body.dark-mode{
   transition: 0.3s ease-in-out;
   border: none;
   transform: scale(1.3);
+  transform: translateY(-8px);
 }
 
 footer {
@@ -629,7 +642,7 @@ footer {
   background-color: #543484;
   color: white;
   display: flex;
-  font-size: 0.5rem;
+  font-size: 1rem;
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
