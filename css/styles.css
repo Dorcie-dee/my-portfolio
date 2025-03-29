@@ -314,13 +314,11 @@ body.dark-mode{
 #experience {
   background-color: #27013f36;
   padding-top: 45px;
-  /* padding-left: 25px; */
   padding-bottom: 50px;
   width: 100%;
 }
 
 .experience-header {
-  /* color: #9F00FF; */
   color: #9F00FF;
   font-size: 1.9rem;
   padding-bottom: 20px;
@@ -333,17 +331,18 @@ body.dark-mode{
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  /* width: 100%; */
 }
 
 .experience-content img {
   border-radius: 15px;
+  max-width: 80%;
+  height: auto;
 }
 
 .experience-tasks {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 9px;
+  grid-template-columns: repeat(auto-fit, (2, 1fr));
+  column-gap: 10px;
   font-size: 1.1rem;
   line-height: 1.7;
   color: #4F3274;
@@ -359,6 +358,8 @@ body.dark-mode{
   text-align: center;
   /* Center the text */
 }
+
+
 
 
 #skills {
