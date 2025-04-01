@@ -486,7 +486,6 @@ body.dark-mode{
 }
 
 .project-all {
-  /* display: flex; */
   width: 100%;
   border-width: 0.1rem;
   border-radius: 1rem;
@@ -499,7 +498,6 @@ body.dark-mode{
 
 .project-photos img:hover {
   transform: scale(1.3px);
-  /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 .project-all h4 {
