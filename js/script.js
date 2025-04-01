@@ -27,6 +27,7 @@ hamburger.addEventListener('click', () => {
 //back to top
 const backToTopButton = document.getElementById('back-to-top');
 
+//to show or hide the button when scrolling
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
     backToTopButton.style.display = 'block';
@@ -35,6 +36,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+//for smooth scrolling to the top
 backToTopButton.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
