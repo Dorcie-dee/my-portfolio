@@ -356,16 +356,18 @@
             <div>
                 <img src="./img/cta.png">
             </div>
-            <div class="form">
-                <h3>Contact Me</h3>
-                <p>Reach out for any enquiries, collaborations or just a
-                    friendly chat</p>
-                <input type="text" name="Message" placeholder="Enter your name here" required>
-                <input type="email" name="email" placeholder="Enter your email here" required>
-                <textarea name="name" placeholder="Please share the details of your request" required></textarea>
+            <form class="form" action="https://formspree.io/f/xpwrvqkn" method="POST">
+                <div>
+                    <h3>Contact Me</h3>
+                    <p>Reach out for any enquiries, collaborations or just a
+                        friendly chat</p>
+                    <input type="text" name="name" placeholder="Enter your name here" required>
+                    <input type="email" name="email" placeholder="Enter your email here" required>
+                    <textarea name="message" placeholder="Please share the details of your request" required></textarea>
 
-                <button>Submit</button>
-            </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </section>
 
