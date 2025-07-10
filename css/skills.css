@@ -34,7 +34,7 @@
 
 .section-header p {
   font-size: 1.125rem;
-  color: var(--text-light);
+  color: #4F3274;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -88,7 +88,7 @@
 .category-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary);
+  color: #4F3274;
   margin-bottom: 0.25rem;
 }
 
