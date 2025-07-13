@@ -7,16 +7,16 @@
   scroll-behavior: smooth;
 }
 
-body.dark-mode{
+body.dark-mode {
   background-color: #121212;
   color: white;
 }
 
-.dark-mode .navbar{
+.dark-mode .navbar {
   background-color: #333;
 }
 
-.dark-mode .hero{
+.dark-mode .hero {
   background-color: #333;
 }
 
@@ -25,17 +25,17 @@ body.dark-mode .cta {
 }
 
 body.dark-mode #skills {
-  background-color: black; 
-  color: #ddd; 
+  background-color: black;
+  color: #ddd;
 }
 
 body.dark-mode .footer {
-  background-color: black; 
-  color: #ddd; 
+  background-color: black;
+  color: #ddd;
 }
 
 body.dark-mode .footer-socials img {
-  filter: invert(1); 
+  filter: invert(1);
 }
 
 body.dark-mode h1,
@@ -44,7 +44,7 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6 {
-  color: #fff; 
+  color: #fff;
 }
 
 .container {
@@ -206,7 +206,7 @@ body.dark-mode h6 {
   color: white;
 }
 
-.hero button a{
+.hero button a {
   color: white;
 }
 
@@ -316,14 +316,19 @@ body.dark-mode h6 {
   cursor: pointer;
   transition: 0.3s ease-in-out;
   animation-name: contact;
-    animation: contact 0.5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+  animation: contact 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-@keyframes contact{
-  from { transform: translate3d(0, 0, 0);}
-  to { transform: translate3d(0, 10px, 20px);}
+@keyframes contact {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 10px, 20px);
+  }
 }
 
 
@@ -555,6 +560,10 @@ body.dark-mode h6 {
   color: #555;
 }
 
+.shadow img:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 
 .cta {
@@ -589,7 +598,7 @@ body.dark-mode h6 {
 }
 
 .form h3 {
-  font-size:35px;
+  font-size: 35px;
   margin-bottom: .5rem;
 }
 
@@ -657,7 +666,7 @@ body.dark-mode h6 {
   font-size: 1.3rem;
 }
 
-.footer-socials{
+.footer-socials {
   padding-left: 1rem;
 }
 
@@ -688,21 +697,21 @@ footer {
 #back-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px; 
+  right: 30px;
   background-color: #9F00FF;
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 2rem; 
+  font-size: 2rem;
   padding: 10px;
   cursor: pointer;
-  display: none; 
+  display: none;
   z-index: 999;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #back-to-top:hover {
-  background-color: #7c3aed; 
+  background-color: #7c3aed;
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
