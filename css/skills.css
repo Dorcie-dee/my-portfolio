@@ -158,7 +158,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 680px) and (max-width: 768px) {
   .skills-container {
     padding: 3rem 1.5rem;
   }
@@ -176,7 +176,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px)  {
   .skills-container {
     padding: 2rem 1rem;
   }

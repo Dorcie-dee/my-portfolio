@@ -261,7 +261,7 @@ body.dark-mode h6 {
 
 #about {
   background-color: white;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 130px;
   width: 100%;
@@ -675,38 +675,6 @@ body.dark-mode h6 {
 .pulse {
   animation: pulse 2s infinite;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  /* .project-all {
-    margin-bottom: 16px;
-  }
-
-  .project-all h4 {
-    font-size: 1.125rem;
-  } */
-
-  .project-links {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  /* Reduce bounce height on mobile */
-  @keyframes bounce {
-
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-3px);
-    }
-  }
-}
-
-
-
 
 
 

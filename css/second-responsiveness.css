@@ -1,3 +1,5 @@
+/* hero section */
+
 /* Responsive Design */
 @media (max-width: 480px) {
 
@@ -476,6 +478,30 @@
     font-size: 1rem;
   }
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Reduce bounce height on mobile */
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+
+
 
 
 /* cta */
